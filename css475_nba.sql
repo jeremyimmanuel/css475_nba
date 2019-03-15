@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS TEAM;
 CREATE TABLE TEAM
 (
 	TeamId				INT unsigned PRIMARY KEY auto_increment NOT NULL,
-    Name				VARCHAR(40) NOT NULL,
+    TeamName			VARCHAR(40) NOT NULL,
     CoachId				INT unsigned NOT NULL,
     ArenaId				INT unsigned NOT NULL,
     Conference			ENUM('West', 'East') NOT NULL,
@@ -1250,3 +1250,7 @@ SELECT * FROM AWARD;
 #	JOIN PLAYER USING (PlayerId)
 #    JOIN AWARD USING (AwardId)
 #WHERE Fname LIKE '%Lebron%' AND Lname LIKE '%James%';
+
+SELECT *
+FROM HEAD_COACH
+	JOIN TEAM USING (CoachId); 
