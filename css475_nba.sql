@@ -85,14 +85,11 @@ CREATE TABLE AWARD
 DROP TABLE IF EXISTS AWARD_WINNER;
 CREATE TABLE AWARD_WINNER
 (
-	AwardId		INT unsigned,
-    PlayerId	INT unsigned,
-    YearWon		YEAR,
+	PlayerId		INT unsigned,
+    AwardId			INT unsigned,
+    YearWon			YEAR,
     CONSTRAINT
-		PRIMARY KEY (AwardId, YearWon),
-	CONSTRAINT
-		FOREIGN KEY (PlayerId)
-			REFERENCES PLAYER(PlayerId)
+		PRIMARY KEY (AwardId, YearWon)
 );
 
 INSERT INTO TEAM
@@ -1237,6 +1234,7 @@ FROM PLAYER
 ORDER BY Height_ft DESC, Height_inch DESC;
 */
 
+/**
 SELECT 	CONCAT(fname, ' ', lname) AS Name,
 		APG
 FROM PLAYER
@@ -1245,3 +1243,10 @@ ORDER BY APG DESC
 LIMIT 10;
 
 SELECT * FROM AWARD;
+*/
+
+#SELECT *
+#FROM AWARD_WINNER
+#	JOIN PLAYER USING (PlayerId)
+#    JOIN AWARD USING (AwardId)
+#WHERE Fname LIKE '%Lebron%' AND Lname LIKE '%James%';
