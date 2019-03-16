@@ -42,7 +42,8 @@ if ($result->num_rows > 0) {
         echo "FT%: " . $row["FT"] . "<br>";
 
     }
-} else {
+} 
+else {
     echo "0 results";
 }
 

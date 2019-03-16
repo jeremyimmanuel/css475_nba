@@ -34,7 +34,7 @@ DROP TABLE IF EXISTS ARENA;
 CREATE TABLE ARENA
 (
 	ArenaId			INT unsigned NOT NULL PRIMARY KEY auto_increment,
-    Name			VARCHAR(50) NOT NULL,
+    ArenaName		VARCHAR(50) NOT NULL,
     Address			VARCHAR(80) NOT NULL,
     City			VARCHAR(40) NOT NULL,
     State			VARCHAR(2) NOT NULL,
