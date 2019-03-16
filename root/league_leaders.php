@@ -7,8 +7,9 @@
 <a href = "search_team.html">Teams</a>
 <a href = "coaches.php">Coaches</a>
 <a href = "awards.php">Awards</a>
-<a href = "index.php">Arena</a>
+<a href = "arenas.php">Arena</a>
 <a href = "league_leaders.php">League Leaders</a>
+<a href = "fun_facts.php">Fun Facts</a>
 <br><br>
 
 <?php
