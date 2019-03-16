@@ -10,7 +10,8 @@ CREATE TABLE TEAM
     CoachId				INT unsigned NOT NULL,
     ArenaId				INT unsigned NOT NULL,
     Conference			ENUM('West', 'East') NOT NULL,
-    Division			ENUM('Pacific', 'Northwest', 'Southwest', 'Atlantic', 'Central', 'Southeast'),
+    Division			ENUM('Pacific', 'Northwest', 'Southwest', 
+							'Atlantic', 'Central', 'Southeast'),
 	Championships		INT NULL,
     Wins				INT NOT NULL,
     Losses				INT NOT NULL
@@ -34,7 +35,7 @@ DROP TABLE IF EXISTS ARENA;
 CREATE TABLE ARENA
 (
 	ArenaId			INT unsigned NOT NULL PRIMARY KEY auto_increment,
-    ArenaName		VARCHAR(50) NOT NULL,
+    Name			VARCHAR(50) NOT NULL,
     Address			VARCHAR(80) NOT NULL,
     City			VARCHAR(40) NOT NULL,
     State			VARCHAR(2) NOT NULL,
@@ -172,10 +173,10 @@ VALUES
 	(6, 'Barclays Center', '620 Atlantic Avenue', 'Brooklyn', 'NY', 17732, 2012),
 	(7, 'Capital One Arena', '601 F Street NW', 'Washington D.C.', 'DC', 20356, 1997),
 	(8, 'Chesapeake Energy Arena', '100 West Reno Avenue', 'Oklahoma City', 'OK', 18203, 2002),
-	(9, 'FeDexForum', '191 Beale Street', 'Memphis', 'TN', 17794, 2004),
+	(9, 'FeDex Forum', '191 Beale Street', 'Memphis', 'TN', 17794, 2004),
 	(10, 'Fiserv Forum', '1111 Vel R. PhillipsAvenue', 'Milwaukee', 'WI', 17500, 2018),
 	(11, 'Golden 1 Center', '500 David J. Stern Walk', 'Sacramento', 'CA', 17583, 2016),
-	(12, 'Little Ceasers Arena', '2645 Woodward Avenue', 'Detroit', 'MI', 20491, 2017),
+	(12, 'Little Caesers Arena', '2645 Woodward Avenue', 'Detroit', 'MI', 20491, 2017),
 	(13, 'Madison Square Garden', '4 Pennsylvania Plaza', 'New York City', 'NY', 19812, 1968),
 	(14, 'Moda Center', '1 Center Court', 'Portland', 'OR', 19441, 1995),
 	(15, 'Oracle Arena', '7000 Coliseum Way', 'Oakland ', 'CA', 19596, 1966),
@@ -1234,23 +1235,9 @@ FROM PLAYER
 ORDER BY Height_ft DESC, Height_inch DESC;
 */
 
-/**
-SELECT 	CONCAT(fname, ' ', lname) AS Name,
-		APG
+SELECT 	CONCAT(Height_ft, '\'', Height_inch, '"') AS Height,
+		AVG(PPG) AS 'Average PPG'
 FROM PLAYER
 	JOIN PLAYED_FOR USING (PlayerId)
-ORDER BY APG DESC
-LIMIT 10;
-
-SELECT * FROM AWARD;
-*/
-
-#SELECT *
-#FROM AWARD_WINNER
-#	JOIN PLAYER USING (PlayerId)
-#    JOIN AWARD USING (AwardId)
-#WHERE Fname LIKE '%Lebron%' AND Lname LIKE '%James%';
-
-SELECT *
-FROM HEAD_COACH
-	JOIN TEAM USING (CoachId); 
+GROUP BY Height
+ORDER BY Height_ft DESC, Height_inch DESC;
