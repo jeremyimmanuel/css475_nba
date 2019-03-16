@@ -6,9 +6,9 @@
        
     <a href = "index.php">Home</a>
     <a href = "search_player.html">Players</a>
-    <a href = "index.php">Teams</a>
+    <a href = "search_team.html">Teams</a>
     <a href = "index.php">Coaches</a>
-    <a href = "index.php">Awards</a>
+    <a href = "awards.php">Awards</a>
     <a href = "index.php">Arena</a>
     <br><br>
 
