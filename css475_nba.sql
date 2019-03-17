@@ -1085,6 +1085,15 @@ VALUES
 	(435, 28, 24.6, 12.2, 3.2, 1.7, 0.9, 0.525, 0.403, 0.838),
 	(464, 28, 17.6, 4.8, 2.4, 0.7, 1, 0.4, 0.335, 0.7),
 	(471, 28, 2.4, 0.5, 0.9, 0, 0.3, 0.48, 0.2, NULL),
+    (25, 17, 10.9, 2.5, 5.6, 0, 0.6, 0.418, 0.297, 0.705),
+    (59, 17, 2.7, 1, 0.5, 0.1, 0.1, 0.411, 0.364, 1),
+    (66, 17, 8.5, 2.3, 2.8, 0.1, 0.5, 0.462, 0.357, 0.747),
+    (69, 17, 7.1, 1.8, 1.7, 0, 0.6, 0.438, 0.318, 0.833),
+    (124, 17, 21, 7.4, 5.7, 0.4, 1.1, 0.43, 0.339, 0.702),
+    (149, 17, 7.5, 4.9, 1, 0.5, 0.9, 0.441, 0.322, 0.681),
+    (182, 17, 14.8, 3.2, 1.9, 0.1, 0.7, 0.398, 0.308, 0.735),
+    (187, 17, 6.1, 1.5, 1.4, 0.2, 0.6, 0.392, 0.307, 0.748),
+    (225, 17, 4.4, 1.3, 0.3, 0.1, 0.3, 0.375, 0.375, 0.6),
 	(251, 17, 6.4, 4.1, 0.9, 1.2, 0.5, 0.451, 0.547, 0.776),
 	(265, 17, 2.7, 0.5, 0.5, 0.1, 0.5, 0.393, 0.464, 0.8),
 	(286, 17, 1, 0, 0, 0, 0.3, 1, 1, NULL),
@@ -1241,3 +1250,20 @@ FROM PLAYER
 	JOIN PLAYED_FOR USING (PlayerId)
 GROUP BY Height
 ORDER BY Height_ft DESC, Height_inch DESC;
+
+SELECT 	TeamName AS Team,
+		MAX(PPG) AS HighestPPG,
+        TEAM.Wins
+FROM TEAM
+	JOIN PLAYED_FOR USING (TeamId)
+    JOIN PLAYER USING (PlayerId)
+GROUP BY (TeamName)
+ORDER BY Wins DESC;
+
+
+SELECT CONCAT(PLAYER.Fname, ' ', Lname) AS Player,
+		PPG
+FROM TEAM
+	JOIN PLAYED_FOR USING (TeamId)
+	JOIN PLAYER USING (PlayerId)
+WHERE PLAYER.TeamId =  TEAM.TeamId AND TeamName = 'Indiana Pacers';
