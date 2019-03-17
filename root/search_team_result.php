@@ -24,7 +24,8 @@ $sql = "SELECT  TeamName,
                 TEAM.Wins AS teamWins,
                 TEAM.Losses AS teamLosses,
                 ArenaName,
-                HEAD_COACH.Name AS coachName
+                HEAD_COACH.Name AS coachName,
+                Champioships
 		FROM TEAM
             JOIN ARENA USING (ArenaId)
             JOIN HEAD_COACH USING (CoachId)
@@ -38,6 +39,10 @@ if ($result->num_rows > 0) {
     echo "2018-19 record: " . $team_col["teamWins"] . " - " . $team_col["teamLosses"] . "<br>";
     echo "Home Stadium: " . $team_col["ArenaName"] . "<br>";
     echo "Head Coach: " . $team_col["coachName"] . "<br>";
+    if($team_col["Championships"] == NULL)
+        echo "Championships: None <br>";
+    else
+    echo "Championships: " . $team_col["Championships"] . "<br>";
 } else {
     echo "No such team as $team_kw";
 }
