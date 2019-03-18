@@ -95,36 +95,36 @@ CREATE TABLE AWARD_WINNER
 
 INSERT INTO TEAM
 VALUES
-	(1, 'Philadelphia 76ers', 1026, 29, 'East', 'Atlantic', 3, 34, 20),
-	(2, 'Portland Trail Blazers', 1028, 14, 'West', 'Northwest', 1, 33, 21),
-	(3, 'Milwaukee Bucks', 1019, 10, 'East', 'Central', 1, 40, 13),
-	(4, 'Chicago Bulls', 1005, 27, 'East', 'Central', 6, 12, 42),
-	(5, 'Cleveland Cavaliers', 1008, 17, 'East', 'Central', 1, 11, 43),
-	(6, 'Boston Celtics', 1002, 25, 'East', 'Atlantic', 17, 35, 20),
-	(7, 'Los Angeles Clippers', 1015, 21, 'West', 'Pacific', NULL, 30, 26),
-	(8, 'Memphis Grizzlies', 1017, 9, 'West', 'Southwest', NULL, 22, 34),
-	(9, 'Atlanta Hawks', 1001, 22, 'East', 'Southeast', 1, 18, 36),
-	(10, 'Miami Heat', 1018, 1, 'East', 'Southeast', 3, 25, 27),
-	(11, 'Charlotte Hornets', 1006, 20, 'East', 'Southeast', NULL, 26, 28),
-	(12, 'Utah Jazz', 1032, 28, 'West', 'Northwest', NULL, 31, 24),
-	(13, 'Sacramento Kings', 1029, 11, 'West', 'Pacific', 1, 28, 26),
-	(14, 'New York Knicks', 1023, 13, 'East', 'Atlantic', 2, 10, 43),
-	(15, 'Los Angeles Lakers', 1016, 21, 'West', 'Pacific', 16, 28, 27),
-	(16, 'Orlando Magic', 1025, 3, 'East', 'Southeast', NULL, 23, 32),
-	(17, 'Dallas Mavericks', 1009, 2, 'West', 'Southwest', 1, 25, 28),
-	(18, 'Brooklyn Nets', 1003, 6, 'East', 'Atlantic', NULL, 29, 27),
-	(19, 'Denver Nuggets', 1010, 16, 'West', 'Northwest', NULL, 37, 17),
-	(20, 'Indiana Pacers', 1014, 5, 'East', 'Central', NULL, 36, 19),
-	(21, 'New Orleans Pelicans', 1022, 19, 'West', 'Southwest', NULL, 24, 31),
-	(22, 'Detroit Pistons', 1011, 12, 'East', 'Central', 3, 24, 29),
-	(23, 'Toronto Raptors', 1031, 18, 'East', 'Atlantic', NULL, 40, 16),
-	(24, 'Houston Rockets', 1013, 26, 'West', 'Southwest', 2, 32, 22),
-	(25, 'San Antonio Spurs', 1030, 4, 'West', 'Southwest', 5, 32, 25),
-	(26, 'Phoenix Suns', 1027, 23, 'West', 'Pacific', NULL, 11, 45),
-	(27, 'Oklahoma City Thunder', 1024, 8, 'West', 'Northwest', 1, 35, 19),
-	(28, 'Minnesota Timberwolves', 1021, 24, 'West', 'Northwest', NULL, 25, 29),
-	(29, 'Golden State Warriors', 1012, 15, 'West', 'Pacific', 6, 38, 15),
-	(30, 'Washington Wizards', 1033, 7, 'East', 'Southeast', 1, 22, 32);
+	(1, 'Philadelphia 76ers', 1026, 29, 'East', 'Atlantic', 3, 45, 25),
+	(2, 'Portland Trail Blazers', 1028, 14, 'West', 'Northwest', 1, 42, 27),
+	(3, 'Milwaukee Bucks', 1019, 10, 'East', 'Central', 1, 52, 18),
+	(4, 'Chicago Bulls', 1005, 27, 'East', 'Central', 6, 19, 52),
+	(5, 'Cleveland Cavaliers', 1008, 17, 'East', 'Central', 1, 17, 53),
+	(6, 'Boston Celtics', 1002, 25, 'East', 'Atlantic', 17, 43, 27),
+	(7, 'Los Angeles Clippers', 1015, 21, 'West', 'Pacific', NULL, 41, 30),
+	(8, 'Memphis Grizzlies', 1017, 9, 'West', 'Southwest', NULL, 28, 42),
+	(9, 'Atlanta Hawks', 1001, 22, 'East', 'Southeast', 1, 24, 47),
+	(10, 'Miami Heat', 1018, 1, 'East', 'Southeast', 3, 33, 36),
+	(11, 'Charlotte Hornets', 1006, 20, 'East', 'Southeast', NULL, 31, 38),
+	(12, 'Utah Jazz', 1032, 28, 'West', 'Northwest', NULL, 40, 29),
+	(13, 'Sacramento Kings', 1029, 11, 'West', 'Pacific', 1, 34, 35),
+	(14, 'New York Knicks', 1023, 13, 'East', 'Atlantic', 2, 14, 56),
+	(15, 'Los Angeles Lakers', 1016, 21, 'West', 'Pacific', 16, 31, 39),
+	(16, 'Orlando Magic', 1025, 3, 'East', 'Southeast', NULL, 33, 38),
+	(17, 'Dallas Mavericks', 1009, 2, 'West', 'Southwest', 1, 28, 41),
+	(18, 'Brooklyn Nets', 1003, 6, 'East', 'Atlantic', NULL, 36, 36),
+	(19, 'Denver Nuggets', 1010, 16, 'West', 'Northwest', NULL, 46, 22),
+	(20, 'Indiana Pacers', 1014, 5, 'East', 'Central', NULL, 44, 26),
+	(21, 'New Orleans Pelicans', 1022, 19, 'West', 'Southwest', NULL, 30, 42),
+	(22, 'Detroit Pistons', 1011, 12, 'East', 'Central', 3, 36, 33),
+	(23, 'Toronto Raptors', 1031, 18, 'East', 'Atlantic', NULL, 49, 21),
+	(24, 'Houston Rockets', 1013, 26, 'West', 'Southwest', 2, 44, 26),
+	(25, 'San Antonio Spurs', 1030, 4, 'West', 'Southwest', 5, 41, 29),
+	(26, 'Phoenix Suns', 1027, 23, 'West', 'Pacific', NULL, 17, 54),
+	(27, 'Oklahoma City Thunder', 1024, 8, 'West', 'Northwest', 1, 42, 28),
+	(28, 'Minnesota Timberwolves', 1021, 24, 'West', 'Northwest', NULL, 32, 38),
+	(29, 'Golden State Warriors', 1012, 15, 'West', 'Pacific', 6, 47, 21),
+	(30, 'Washington Wizards', 1033, 7, 'East', 'Southeast', 1, 30, 40);
     
 #Connecting Table between PLAYER and AWARDS
 INSERT INTO HEAD_COACH
@@ -1222,48 +1222,3 @@ VALUES
 	(298, 5, 2016),
 	(14, 5, 2017),
 	(350, 5, 2018);
-
-
-/**
-#Teams that have 5 championships or more
-SELECT 	TEAM.Name,
-		Championships
-FROM TEAM
-WHERE Championships >= 5;
-
-#Search a team that has Luke Walton as their head coach
-SELECT TEAM.Name
-FROM TEAM
-	JOIN HEAD_COACH ON HEAD_COACH.CoachId = TEAM.CoachId
-WHERE HEAD_COACH.Name = 'Luke Walton';
-
-#Display all players sorted by height
-SELECT 	CONCAT(Fname, ' ', Lname) AS Player,
-		CONCAT(Height_ft, '\'', Height_inch, '"') AS Height
-FROM PLAYER
-ORDER BY Height_ft DESC, Height_inch DESC;
-*/
-
-SELECT 	CONCAT(Height_ft, '\'', Height_inch, '"') AS Height,
-		AVG(PPG) AS 'Average PPG'
-FROM PLAYER
-	JOIN PLAYED_FOR USING (PlayerId)
-GROUP BY Height
-ORDER BY Height_ft DESC, Height_inch DESC;
-
-SELECT 	TeamName AS Team,
-		MAX(PPG) AS HighestPPG,
-        TEAM.Wins
-FROM TEAM
-	JOIN PLAYED_FOR USING (TeamId)
-    JOIN PLAYER USING (PlayerId)
-GROUP BY (TeamName)
-ORDER BY Wins DESC;
-
-
-SELECT CONCAT(PLAYER.Fname, ' ', Lname) AS Player,
-		PPG
-FROM TEAM
-	JOIN PLAYED_FOR USING (TeamId)
-	JOIN PLAYER USING (PlayerId)
-WHERE PLAYER.TeamId =  TEAM.TeamId AND TeamName = 'Indiana Pacers';
