@@ -34,7 +34,7 @@ if ($result->num_rows > 0)
 	//	output data of each row
 	while($row = $result->fetch_assoc()) 
 	{        
-        echo "<tr><td>" . $row["TeamName"] . "</td><td>" . $row["ArenaName"] . "</td><td>". $row["Arena_Address"] . "</td><td>". $row["City"] . "</td><td>". $row["Arena_State"] . "</td><td>". $row["Capacity"] . "</td><td>". $row["BuiltIn"] . "</td><td><img src = \"images/". $row["ArenaName"] .".jpg\" width=\"100\" height=\"30\" ></td></tr>";
+        echo "<tr><td>" . $row["TeamName"] . "</td><td>" . $row["ArenaName"] . "</td><td>". $row["Arena_Address"] . "</td><td>". $row["City"] . "</td><td>". $row["Arena_State"] . "</td><td>". $row["Capacity"] . "</td><td>". $row["BuiltIn"] . "</td><td><img src = \"images/". $row["ArenaName"] .".jpg\" width=\"400\" height=\"300\" ></td></tr>";
 	}
 	echo "</table>";
     
