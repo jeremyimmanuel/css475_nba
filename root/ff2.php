@@ -17,7 +17,7 @@ if ($result->num_rows > 0)
     /**
      * Insert roster table here
      */
-    echo "<h3>Do taller people perform score more than shorter people?</h3>";
+    echo "<h3>Does having the best scorer translate to more wins?</h3>";
 
 	echo "<table><tr><th>Team</th><th>Highest PPG</th><th>Wins</th></tr>";
 	//	output data of each row

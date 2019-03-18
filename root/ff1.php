@@ -12,8 +12,8 @@ $result = $mysqli->query($sql);
 
 if ($result->num_rows > 0) 
 {
-    echo "<h3>Does having the best scorer translate to more wins?</h3>";
-
+    echo "<h3>Do taller players score more points than shorter players?</h3>";
+    
 	echo "<table><tr><th>Height</th><th>AveragePPG</th></tr>";
 	//	output data of each row
 	while($row = $result->fetch_assoc()) 
