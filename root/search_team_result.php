@@ -25,7 +25,7 @@ $sql = "SELECT  TeamName,
                 TEAM.Losses AS teamLosses,
                 ArenaName,
                 HEAD_COACH.Name AS coachName,
-                Champioships
+                Championships
 		FROM TEAM
             JOIN ARENA USING (ArenaId)
             JOIN HEAD_COACH USING (CoachId)
@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
     if($team_col["Championships"] == NULL)
         echo "Championships: None <br>";
     else
-    echo "Championships: " . $team_col["Championships"] . "<br>";
+        echo "Championships: " . $team_col["Championships"] . "<br>";
 } else {
     echo "No such team as $team_kw";
 }
